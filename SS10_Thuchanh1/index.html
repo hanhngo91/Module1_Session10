@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu lệnh else if</title>
+</head>
+<body>
+    
+   
+    <script>
+    //      Nhập điểm 3 môn Toán lÝ Hóa, sau đó tính diểm trung bình.
+    // Từ 8<=10 là loại giỏi
+    // Từ 6,5<=8 là loại khá
+    // Từ 5<=ĐTB<6.5 loại TB
+    // Từ <5 là loại yếu
+
+        // let a = +prompt('Nhập điểm Toán của bạn.');
+        // let b = +prompt('Nhập điểm Lý của bạn.');
+        // let c = +prompt('Nhập điểm Hóa của bạn.');
+        // let d = (a+b+c)/3;
+        // if (d>=8 && d<=10){
+        //     alert('Học lực của bạn là Giỏi');
+        // }else if (d<8 && d>=6.5){
+        //     alert('Học lực của bạn là Khá');
+        // }else if(d>=5 && d<6.5){
+        //     alert('Học lực của bạn là Trung bình');
+        // }else if (d<5){
+        //     alert('Học lực của bạn là Yếu');
+        // }
+
+    //  Tìm số lớn nhất trong 3 số bất kỳ
+        let a = +prompt('Nhập số thứ nhất');
+        let b = +prompt('Nhập số thứ hai');
+        let c = +prompt('Nhập số thứ ba');
+            if(a===b && a>c){
+                alert(`Số thứ nhất là ${a} và số thứ hai là ${b} là hai số lớn nhất trong ba số ${a}, ${b} và ${c}`);
+            }else if(a===c && a>b){
+                alert(`Số thứ nhất là ${a} và số thứ ba là ${c} là hai số lớn nhất trong ba số ${a}, ${b} và ${c}`);
+            }else if(a===b && a<c){
+                alert(`Số thứ ba là ${c} là số lớn nhất trong ba số ${a}, ${b} và ${c}`);
+            }else if(a===c && a<b){
+                alert(`Số thứ hai là ${b} là số lớn nhất trong ba số ${a}, ${b} và ${c}`);
+            }else if(a===b && a===b && a===c){
+                alert(`Số thứ nhất là ${a}, số thứ hai là ${b} và số thứ ba là ${c} là ba số lớn nhất trong ba số ${a}, ${b} và ${c}`);
+            }else if(b===c && b>a){
+                alert(`Số thứ hai là ${b} và số thứ ba là ${c} là hai số lớn nhất trong ba số ${a}, ${b} và ${c}`);
+            }else if(b===c && b<a){
+                alert(`Số thứ nhất là ${a} là số lớn nhất trong ba số ${a}, ${b} và ${c}`);
+            }else if(a>b && a>c){
+                alert(`${a} là số lớn nhất trong ba số ${a}, ${b} và ${c}`);
+            }else if(a<b && b>c){
+                alert(`${b} là số lớn nhất trong ba số ${a}, ${b} và ${c}`);
+            }else{
+                alert(`${c} là số lớn nhất trong ba số ${a}, ${b} và ${c}`);
+            }
+    </script>
+
+</body>
+</html>
