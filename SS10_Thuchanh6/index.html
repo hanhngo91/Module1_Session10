@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <img id="myImage" src="./media/psyduck_run.png" alt="psyduck"> <br>
+        <input type="button" value="PUSH" onclick="moveRight();"/>
+    </form>
+
+    <script>
+        let imgOnj = null;
+        imgObj = document.getElementById('myImage');
+        function init(){
+            imgOnj = document.getElementById('myImage');
+            imgOnj.style.position = 'relative';
+            imgObj.style.left = '0px';
+        }
+        function moveRight(){
+            imgOnj.style.left = parseInt(imgOnj.style.left) + 20 +'px';
+        }
+        window.onload = init;
+        
+    </script>
+</body>
+</html>
