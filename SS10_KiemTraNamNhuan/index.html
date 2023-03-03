@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS10_Kiểm tra năm nhuận</title>
+</head>
+<body>
+    
+
+    <script>
+        let a = +prompt('Nhập tháng muốn tìm');
+        switch(a){
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                alert(`Tháng ${a} có 30 ngày`);
+                break;
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                alert(`Tháng ${a} có 31 ngày`);
+                break;
+            case 2:
+                let b = +prompt('Nhập năm');
+                if(b % 4 == 0 && b % 100 != 0){
+                    alert(`Tháng 2 có 29 ngày`);
+                }else if(b % 100 == 0 && b % 400 == 0){
+                    alert(`Tháng 2 có 29 ngày`)
+                }else{
+                    alert('Tháng 2 có 28 ngày')
+                }
+            break;
+            default:
+                alert(`Số tháng chưa chính xác`);
+            
+        }
+
+
+        
+
+    </script>
+</body>
+</html>
