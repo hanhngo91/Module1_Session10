@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do you love me?</title>
+    <style>
+        .content {
+            display: flex;
+            justify-content: center;
+        }
+        h1 {
+            margin: 200px auto;
+            color: chocolate;
+            border: 1px solid chocolate;
+            padding: 10px;
+            background-color: rgba(176, 111, 64, 0.185);
+            border-radius: 10px;
+        }
+        input {
+           width: 100px;
+           height: 30px;
+           font-size: 20px;
+           border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+    <h1>DO YOU LOVE ME?</h1>
+    <input style="position: absolute; left: 285px; top: 235px;" type="button" value="yes" onclick="yesButton()">
+    <input style="position: absolute; left: 210px; top: 379px;" id="btnNo" type="button" value="no" onmouseover="noHover()">
+    </div>
+    
+
+    <script>
+        function yesButton(){
+            alert('I LOVE YOU TOO <3');
+        }
+        function noHover(){
+            let x = Math.round(Math.random() * window.innerWidth);
+            let y = Math.round(Math.random() * window.innerHeight);
+            document.getElementById("btnNo").style.left = x + 'px';
+            document.getElementById("btnNo").style.top = y + 'px';
+        }
+    </script>
+</body>
+</html>
